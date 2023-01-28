@@ -36,6 +36,8 @@ struct ContentView: View {
                                 .foregroundColor(.secondary)
                         }
                     }
+                    /// Challenge 2:
+                    .listRowBackground(book.rating == 1 ? Color.red : Color(UIColor.tertiarySystemBackground))
                 }
                 .onDelete(perform: deleteBooks)
             }
