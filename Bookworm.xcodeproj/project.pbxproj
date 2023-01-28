@@ -67,10 +67,10 @@
 				B81ADD5829830D1000D96E31 /* Bookworm.xcdatamodeld */,
 				B81ADD5B29830DF300D96E31 /* DataController.swift */,
 				B81ADD4C2982FED600D96E31 /* ContentView.swift */,
-				B8E1243429842B6500F08286 /* DetailView.swift */,
-				B8E12432298425CB00F08286 /* EmojiRatingView.swift */,
-				B8E1242E2983F67800F08286 /* RatingView.swift */,
 				B8E1242C2983C24B00F08286 /* AddBookView.swift */,
+				B8E1243429842B6500F08286 /* DetailView.swift */,
+				B8E1242E2983F67800F08286 /* RatingView.swift */,
+				B8E12432298425CB00F08286 /* EmojiRatingView.swift */,
 				B81ADD4E2982FED800D96E31 /* Assets.xcassets */,
 				B81ADD502982FED800D96E31 /* Preview Content */,
 			);
