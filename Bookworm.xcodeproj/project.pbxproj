@@ -17,6 +17,7 @@
 		B8E1242F2983F67800F08286 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1242E2983F67800F08286 /* RatingView.swift */; };
 		B8E12433298425CB00F08286 /* EmojiRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E12432298425CB00F08286 /* EmojiRatingView.swift */; };
 		B8E1243529842B6500F08286 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8E1243429842B6500F08286 /* DetailView.swift */; };
+		B8F4035029853CC5008022CA /* String-IsTrulyEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F4034F29853CC5008022CA /* String-IsTrulyEmpty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		B8E1242E2983F67800F08286 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
 		B8E12432298425CB00F08286 /* EmojiRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiRatingView.swift; sourceTree = "<group>"; };
 		B8E1243429842B6500F08286 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		B8F4034F29853CC5008022CA /* String-IsTrulyEmpty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-IsTrulyEmpty.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 		B81ADD492982FED600D96E31 /* Bookworm */ = {
 			isa = PBXGroup;
 			children = (
+				B8F4034F29853CC5008022CA /* String-IsTrulyEmpty.swift */,
 				B81ADD4A2982FED600D96E31 /* BookwormApp.swift */,
 				B81ADD5829830D1000D96E31 /* Bookworm.xcdatamodeld */,
 				B81ADD5B29830DF300D96E31 /* DataController.swift */,
@@ -155,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8F4035029853CC5008022CA /* String-IsTrulyEmpty.swift in Sources */,
 				B81ADD4D2982FED600D96E31 /* ContentView.swift in Sources */,
 				B8E1243529842B6500F08286 /* DetailView.swift in Sources */,
 				B81ADD5C29830DF300D96E31 /* DataController.swift in Sources */,

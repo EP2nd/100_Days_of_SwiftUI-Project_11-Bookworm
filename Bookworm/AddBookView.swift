@@ -14,7 +14,8 @@ struct AddBookView: View {
     @State private var title = ""
     @State private var author = ""
     @State private var rating = 3
-    @State private var genre = ""
+    /// Challenge 1:
+    @State private var genre: String?
     @State private var review = ""
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
@@ -50,16 +51,30 @@ struct AddBookView: View {
                         newBook.title = title
                         newBook.author = author
                         newBook.rating = Int16(rating)
-                        newBook.genre = genre
+                        /// Challenge 1:
+                        newBook.genre = genre ?? "Fantasy"
                         newBook.review = review
                         
                         try? moc.save()
                         dismiss()
                     }
+                    /// Challenge 1:
+                    .disabled(hasNoMissingAttributes() == false)
+                    
                 }
             }
             .navigationTitle("Add Book")
         }
+    }
+    
+    /// Challenge 1:
+    func hasNoMissingAttributes() -> Bool {
+        
+        if title.isTrulyEmpty || author.isTrulyEmpty {
+            return false
+        }
+        
+        return true
     }
 }
 
