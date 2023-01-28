@@ -45,6 +45,18 @@ struct DetailView: View {
             
             RatingView(rating: .constant(Int(book.rating)))
                 .font(.largeTitle)
+            
+            /// Challenge 3:
+            if let date = book.date {
+                Text("Finished on:")
+                    .font(.caption)
+                    .foregroundColor(.secondary)
+                    .padding(.top)
+                
+                Label(date.formatted(date: .abbreviated, time: .shortened), systemImage: "calendar")
+                    .font(.caption2)
+                    .foregroundColor(.accentColor)
+            }
         }
         .navigationTitle(book.title ?? "Unknown Book")
         .navigationBarTitleDisplayMode(.inline)

@@ -17,6 +17,8 @@ struct AddBookView: View {
     /// Challenge 1:
     @State private var genre: String?
     @State private var review = ""
+    /// Challenge 3:
+    @State private var date = Date.now
     
     let genres = ["Fantasy", "Horror", "Kids", "Mystery", "Poetry", "Romance", "Thriller"]
     
@@ -54,6 +56,8 @@ struct AddBookView: View {
                         /// Challenge 1:
                         newBook.genre = genre ?? "Fantasy"
                         newBook.review = review
+                        /// Challenge 3:
+                        newBook.date = date
                         
                         try? moc.save()
                         dismiss()
